@@ -333,7 +333,7 @@ footer h4 {
 /*BASIC WEB*/
 
 .about-info h2 a:hover {
-  background-color: rgb(250, 202, 0, 0.9) !important;
+  background-color: rgb(250, 202, 0, 0.7) !important;
 }
 
 /*ANIMATION*/
@@ -392,3 +392,14 @@ footer h4 {
     display: none;
   }
 }
+
+/*LINKS I want to mark*/
+  .blue h2 {
+    text-decoration: none;
+    color: darkblue;
+  }
+
+  .blue:hover h2{
+    background-color: rgb(250, 202, 0, 0.8);
+    border-radius: 12px;
+  }
