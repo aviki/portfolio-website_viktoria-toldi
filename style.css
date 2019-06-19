@@ -1,0 +1,394 @@
+* {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+/*HEADER*/
+
+header {
+  background-color: #faca00;
+  width: 100%;
+  height: 18vh;
+}
+
+#header-logo {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style-type: none;
+  padding: 0 16px;
+}
+
+header nav ul li a {
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 1000px) {
+  #header-logo {
+    margin: 31px 0;
+    padding: 0px 50px 0px 40px;
+    float: left;
+  }
+
+  header nav ul {
+    margin: 35px 50px 0px 0px;
+    padding: 0px 30px 0px 0px;
+    float: right;
+  }
+
+  header nav ul li a {
+    font-family: Catamaran;
+    font-size: 18px;
+    line-height: 60px;
+  }
+}
+
+
+/*INDEX*/
+
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 18vh - 15vh);
+  background-image: url('images/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.index-banner h2 {
+  font-family: Catamaran;
+  font-size: 45px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+  font-family: Cormorant Garamond;
+  font-size: 28px;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+  padding-top: 50px;
+}
+
+.index-links div {
+  margin: 16px 16px 0px;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: #111;
+  text-align: center;
+}
+
+#box-viki-design {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .index-banner {
+    height: 500px;
+  }
+
+  .index-banner h1 {
+    display: block;
+    width: 470px;
+    margin: 0 auto;
+  }
+
+  .index-links {
+    overflow: hidden;
+  }
+
+  .index-links div {
+    margin: 10px 10px 0px;
+    height: 230px;
+    background-color: #f2f2f2;
+    float: left;
+  }
+
+  .index-box-square {
+    width: calc(25% - 20px) !important;
+  }
+
+  .index-box-rectangle {
+    width: calc(50% - 20px) !important;
+  }
+
+  #box-viki-design {
+    display: block;
+    background-color: #faca00 !important;
+    color: #fff !important;
+  }
+
+  #box-viki-design h3 {
+    color: #fff !important;
+  }
+
+  .index-links div h3 {
+    line-height: 230px;
+  }
+}
+
+
+/*FOOTER*/
+
+footer {
+  width: 100%;
+  height: 15vh;
+  margin-top: 20px;
+  background-color: #111;
+}
+
+footer .footer-logo {
+  display: inline-block;
+  float: left;
+  margin: 0 0 0 0;
+  align-items: center;
+  padding: 30px 20px 10px 10px;
+}
+
+footer h4 {
+  font-family: Catamaran;
+  font-size: 16px;
+  font-weight: 100;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 40px 10px 0px 0px;
+}
+
+/*ABOUT*/
+
+.about {
+  width: 100%;
+}
+
+.about-info {
+  width: 100%;
+}
+
+.about-info h2 {
+  padding: 30px 30px 20px;
+  font-family: Catamaran;
+  font-size: 40px;
+  font-weight: 500;
+  color: #111;
+  line-height: 45px;
+}
+
+.about-info p {
+  padding: 0px 30px 20px;
+  font-family: Cormorant Garamond;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111;
+  line-height: 24px;
+}
+
+.img-me {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-info h2 {
+    padding: 20px 0px 0px;
+  }
+
+  .about-info p {
+    padding: 20px 0px 0px;
+  }
+
+  .about {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .img-me {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .about {
+    width: 1000px;
+    height: calc(100vh - 18vh - 15vh);
+    margin: 0 auto;
+  }
+
+  .about-info {
+    width: 50%;
+    float: right;
+  }
+
+  .about-info h2 {
+    padding: 20px 0px 0px 30px;
+  }
+
+  .about-info p {
+    padding: 20px 0px 0px 30px;
+  }
+
+  .img-me {
+    padding-top: 20px;
+    width: 50%;
+    float: left;
+  }
+}
+
+/*CONTACT*/
+
+.contact-banner {
+  width: 100%;
+  height: 30vh;
+  background-image: url('images/about-3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-banner h2 {
+  font-family: Catamaran;
+  font-size: 35px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.contact-banner h3 {
+  font-family: Cormorant Garamond;
+  font-size: 28px;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+  padding-top: 50px;
+}
+
+.buttons {
+  background-color: #111;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Catamaran;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#email-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.middle-background {
+  width: 100%;
+  height: calc(100vh - 18vh - 30vh - 15vh);
+  background-color: #fff;
+}
+
+/*BASIC WEB*/
+
+.about-info h2 a:hover {
+  background-color: rgb(250, 202, 0, 0.9);
+}
+
+/*ANIMATION*/
+
+.img-polly {
+  width: 100%;
+}
+
+.animation-info {
+  width: 100%;
+}
+
+.animation-info h2 {
+  padding: 30px 30px 20px;
+  font-family: Catamaran;
+  font-size: 40px;
+  font-weight: 500;
+  color: #111;
+  line-height: 45px;
+}
+
+.animation-info p {
+  padding: 0px 30px 20px;
+  font-family: Cormorant Garamond;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111;
+  line-height: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .animation-info h2 {
+    padding: 20px 0px 0px;
+  }
+
+  .animation-info p {
+    padding: 20px 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .animation-info {
+    width: 50%;
+    float: right;
+  }
+
+  .animation-info h2 {
+    padding: 20px 0px 0px 30px;
+  }
+
+  .animation-info p {
+    padding: 20px 0px 0px 30px;
+  }
+
+  .no-footer {
+    display: none;
+  }
+}
