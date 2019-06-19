@@ -333,7 +333,7 @@ footer h4 {
 /*BASIC WEB*/
 
 .about-info h2 a:hover {
-  background-color: rgb(250, 202, 0, 0.9);
+  background-color: rgb(250, 202, 0, 0.9) !important;
 }
 
 /*ANIMATION*/
